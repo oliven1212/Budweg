@@ -5,37 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Budweg"
         mc:Ignorable="d"
-        Title="WhistleblowerPage" Height="450" Width="800">
+        Title="WhistleblowerPage" Height="500" Width="800">
 
-    <Grid>
+    <Grid Background="#FF3B3B3B">
         <Grid.Resources>
             <Style TargetType="{x:Type Label}">
-            <Setter Property = "BorderBrush" Value = "Black"/>
-            <Setter Property = "BorderThickness" Value = "0.3"/>
-            <Setter Property = "HorizontalAlignment" Value = "Left"/>
-            <Setter Property = "VerticalAlignment" Value = "Top"/>
-        </Style>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+                <Setter Property = "BorderThickness" Value = "0.3"/>
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+            </Style>
             <Style TargetType="{x:Type ListBox}">
-            <Setter Property = "HorizontalAlignment" Value = "Left"/>
-            <Setter Property = "VerticalAlignment" Value = "Top"/>
-        </Style>
-            <Style TargetType="{x:Type ComboBox}">
-            <Setter Property = "HorizontalAlignment" Value = "Left"/>
-            <Setter Property = "VerticalAlignment" Value = "Top"/>
-        </Style>
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+            </Style>
             <Style TargetType="{x:Type Image}">
-            <Setter Property = "HorizontalAlignment" Value = "Left"/>
-            <Setter Property = "VerticalAlignment" Value = "Top"/>
-        </Style>
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
 
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+            </Style>
         </Grid.Resources>
-        <Image Height="152" Margin="608,130,0,0" Width="151" />
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,261,211,19"/>
-        <ComboBox  Margin="30,64,0,0"  Width="559" Height="100"/>
-        <Label Content="Whistleblower id"  Margin="30,23,0,0"  RenderTransformOrigin="4.751,0.517" Width="133"/>
-        <Label Content="IsActive"  Margin="282,23,0,0" RenderTransformOrigin="4.751,0.517" Width="133"/>
-        <Label Content="Titel på sagen"  Margin="30,103,0,0" Height="27" Width="559"/>
-        <Label Content="Text fra sagen"  Margin="30,150,0,0" Height="84" Width="559" />
 
+        <Image Height="152" Margin="617,78,0,0" Width="151"/>
+        <Label  Content="Id:"  Margin="30,20,0,0"  RenderTransformOrigin="4.751,0.517" Width="30" Height="30"/>
+        <Label  Content="Whistleblower id"  Margin="60,20,0,0"  RenderTransformOrigin="4.751,0.517" Width="130" Height="30"/>
+        <Label  Content="IsActive"  Margin="480,20,0,0" RenderTransformOrigin="4.751,0.517" Width="110" Height="30"/>
+        <Label  Content="WhileblowerType" Margin="30,60,0,0"  Height="30" Width="560"/>
+        <Label  Content="Titel på sagen"  Margin="30,100,0,0" Height="30" Width="560"/>
+        <Label  Content="Text fra sagen"  Margin="30,140,0,0" Height="60" Width="560" />
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=20}" Margin="30,210,0,0" Width="560" Height="150"/>
+        <TextBox Text="TextBox" Margin="30,380,290,0" TextWrapping="Wrap" Width="480" Height="40"/>
+        <Button Content="Send"  Margin="530,380,0,0" Height="40" Width="60"/>
     </Grid>
 </Window>

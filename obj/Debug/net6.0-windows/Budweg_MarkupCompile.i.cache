@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\askhy\source\repos\SkoleOpgaver\Budweg\App.xaml
-22071053987
+3-137352659
 
-13-926404201
+17-754317844
 194101785492
-LoginPage.xaml;WhistleblowerPage.xaml;
+LoginPage.xaml;WhistleblowerPage.xaml;WhistleBlowerPopup.xaml;
 
-True
+False
 

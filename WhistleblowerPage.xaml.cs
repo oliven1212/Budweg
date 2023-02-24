@@ -19,14 +19,17 @@ namespace Budweg
     /// </summary>
     public partial class WhistleblowerPage : Window
     {
+        MainViewModel mvm = new MainViewModel();
+
         public WhistleblowerPage()
         {
             InitializeComponent();
+            DataContext = mvm;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
     }
 }

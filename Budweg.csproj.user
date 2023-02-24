@@ -10,12 +10,18 @@
     <Compile Update="WhistleblowerPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WhistleBlowerPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="LoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WhistleblowerPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WhistleBlowerPopup.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

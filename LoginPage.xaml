@@ -6,10 +6,36 @@
         xmlns:local="clr-namespace:Budweg"
         mc:Ignorable="d"
         Title="LoginPage" Height="450" Width="800">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="96,130,0,0" TextWrapping="Wrap" Text="brugernavn" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="96,189,0,0" TextWrapping="Wrap" Text="adgangskode" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Log Ind" HorizontalAlignment="Left" Margin="136,290,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Label Content="LOGIN SIDE" HorizontalAlignment="Left" Margin="43,40,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#FF3B3B3B">
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#FF1C1C1C"/>
+                <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+            </Style>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property = "HorizontalAlignment" Value = "Left"/>
+                <Setter Property = "VerticalAlignment" Value = "Top"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+        </Grid.Resources>
+        <Label Content="LOGIN SIDE"  Margin="30,40,0,0"  FontSize="20" />
+        <Label Content="Brugernavn"  Margin="30,100,0,0" FontSize="14" />
+        <TextBox Margin="30,130,0,0" TextWrapping="Wrap" Text="brugernavn" Width="120" Height="20"/>
+        <Label Content="Adgangskode" Margin="30,180,0,0" FontSize="14" />
+        <TextBox Margin="30,210,0,0" TextWrapping="Wrap" Text="adgangskode" Width="120" Height="20"/>
+        <Button Content="Log Ind" Margin="30,260,0,0" Width="120" Height="20"/>
+        <Button Content="Opret whistleblow" Margin="600,130,0,0" Width="120" Height="20" Click="Click_CreateWhistleblower"/>
+
+
     </Grid>
 </Window>

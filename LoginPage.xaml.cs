@@ -20,14 +20,20 @@ namespace Budweg
     /// </summary>
     public partial class LoginPage : Window
     {
+        public MainViewModel mvm = new();
+
         public LoginPage()
         {
             InitializeComponent();
+            DataContext = mvm;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Click_CreateWhistleblower(object sender, RoutedEventArgs e)
         {
-
+            WhistleBlowerPopup page = new WhistleBlowerPopup();
+            this.Close();
+            page.Show();
         }
+        
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Budweg.Model
+namespace Budweg
 {
     public class Whistleblower : Blog
     {
@@ -24,14 +24,13 @@ namespace Budweg.Model
         {
 
         }
-        public Whistleblower(Employee author, string title, string text, string picturePath, WhistleblowerType whistleblowerType)
+        public Whistleblower(string title, string text, string picturePath) // WhistleblowerType whistleblowerTypeChoice 
         {
-            Author = author;
             Title= title;
             Text= text;
             PicturePath= picturePath;
             IsActive= true;
-            WhistleblowerTypeChoice = WhistleblowerType;
+            // WhistleblowerTypeChoice = whistleblowerTypeChoice;
         }
 
         public Whistleblower CreateWhistleblower()
