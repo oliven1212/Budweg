@@ -43,17 +43,57 @@
                 <Setter Property="Background" Value="#FF1C1C1C"/>
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
             </Style>
+            <Style TargetType="{x:Type ListBoxItem}">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="BorderBrush" Value="Gray"/>
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
         </Grid.Resources>
 
         <Image Height="152" Margin="617,78,0,0" Width="151"/>
         <Label  Content="Id:"  Margin="30,20,0,0"  RenderTransformOrigin="4.751,0.517" Width="30" Height="30"/>
-        <Label  Content="Whistleblower id"  Margin="60,20,0,0"  RenderTransformOrigin="4.751,0.517" Width="130" Height="30"/>
-        <Label  Content="IsActive"  Margin="480,20,0,0" RenderTransformOrigin="4.751,0.517" Width="110" Height="30"/>
-        <Label  Content="WhileblowerType" Margin="30,60,0,0"  Height="30" Width="560"/>
-        <Label  Content="Titel på sagen"  Margin="30,100,0,0" Height="30" Width="560"/>
-        <Label  Content="Text fra sagen"  Margin="30,140,0,0" Height="60" Width="560" />
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=20}" Margin="30,210,0,0" Width="560" Height="150"/>
-        <TextBox Text="TextBox" Margin="30,380,290,0" TextWrapping="Wrap" Width="480" Height="40"/>
+        <Label  Content="1321"  Margin="60,20,0,0"  RenderTransformOrigin="4.751,0.517" Width="80" Height="30"/>
+        <Label  Content="Er aktiv"  Margin="480,20,0,0" RenderTransformOrigin="4.751,0.517" Width="110" Height="30"/>
+        <Label  Content="Klage" Margin="30,60,0,0"  Height="30" Width="560"/>
+        <Label  Content="Mad forgiftning fra kantinen"  Margin="30,100,0,0" Height="30" Width="560"/>
+        <Label   Margin="30,140,0,0" Height="60" Width="560">
+            <TextBlock>
+             Onsdag den 22/02-2023's eftermiddag spiste jeg fisk fra kantinen og har derefter haft det dårligt
+            </TextBlock>
+        </Label>
+        <ListBox  Margin="30,210,0,0" Width="560" Height="150">
+            <ListBoxItem>
+                <TextBlock>
+                Person ID: 101
+                <LineBreak />
+                Vi har set dit problem og går igang med at undersøge det
+                </TextBlock>
+            </ListBoxItem>
+            <ListBoxItem>
+                <TextBlock>
+                Person ID: 1321
+                <LineBreak />
+                Tak skal i have, håber at det bliver ordnet
+                </TextBlock>
+            </ListBoxItem>
+            <ListBoxItem>
+                <TextBlock>
+                Person ID: 101
+                <LineBreak />
+Håber du får for det bedre inden mandag, god bedring
+                </TextBlock>
+            </ListBoxItem>
+            <ListBoxItem>
+                <TextBlock>
+                Person ID: 1321
+                <LineBreak />
+Tak skal du have, hav en god weekend
+                </TextBlock>
+            </ListBoxItem>
+        </ListBox>
+        <TextBox Text="Svar" Margin="30,380,290,0" TextWrapping="Wrap" Width="480" Height="40"/>
         <Button Content="Send"  Margin="530,380,0,0" Height="40" Width="60"/>
     </Grid>
 </Window>

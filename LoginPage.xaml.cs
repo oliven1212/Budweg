@@ -34,6 +34,15 @@ namespace Budweg
             this.Close();
             page.Show();
         }
-        
+        private void Click_OpenWhistleblowerExample(object sender, RoutedEventArgs e)
+        {
+            WhistleblowerPage page = new WhistleblowerPage();
+            this.Close();
+            page.Show();
+        }
+
+
+
+
     }
 }

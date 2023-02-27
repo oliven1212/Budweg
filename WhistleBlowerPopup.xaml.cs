@@ -26,5 +26,10 @@ namespace Budweg
             InitializeComponent();
             DataContext = mvm;
         }
+
+        private void TitleField_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+
+        }
     }
 }

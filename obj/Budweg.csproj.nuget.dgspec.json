@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj": {}
+    "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj": {
+    "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj",
+        "projectUniqueName": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj",
         "projectName": "Budweg",
-        "projectPath": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj",
-        "packagesPath": "C:\\Users\\askhy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\obj\\",
+        "projectPath": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj",
+        "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\askhy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

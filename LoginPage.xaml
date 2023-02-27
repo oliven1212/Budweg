@@ -21,6 +21,7 @@
                 <Setter Property="Foreground" Value="White"/>
                 <Setter Property="Background" Value="#FF1C1C1C"/>
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
+
             </Style>
             <Style TargetType="{x:Type Label}">
                 <Setter Property = "HorizontalAlignment" Value = "Left"/>
@@ -35,6 +36,7 @@
         <TextBox Margin="30,210,0,0" TextWrapping="Wrap" Text="adgangskode" Width="120" Height="20"/>
         <Button Content="Log Ind" Margin="30,260,0,0" Width="120" Height="20"/>
         <Button Content="Opret whistleblow" Margin="600,130,0,0" Width="120" Height="20" Click="Click_CreateWhistleblower"/>
+        <Button Content="Se eksemple whistleblow" Margin="536,260,0,0" Width="184" Height="20" Click="Click_OpenWhistleblowerExample"/>
 
 
     </Grid>
