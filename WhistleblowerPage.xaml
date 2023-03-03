@@ -7,21 +7,18 @@
         mc:Ignorable="d"
         Title="WhistleblowerPage" Height="500" Width="800">
 
-    <Grid Background="#FF3B3B3B">
+    <Grid>
         <Grid.Resources>
             <Style TargetType="{x:Type Label}">
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
                 <Setter Property = "BorderThickness" Value = "0.3"/>
                 <Setter Property = "HorizontalAlignment" Value = "Left"/>
                 <Setter Property = "VerticalAlignment" Value = "Top"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="Background" Value="#FF1C1C1C"/>
+
             </Style>
             <Style TargetType="{x:Type ListBox}">
                 <Setter Property = "HorizontalAlignment" Value = "Left"/>
                 <Setter Property = "VerticalAlignment" Value = "Top"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="Background" Value="#FF1C1C1C"/>
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
             </Style>
             <Style TargetType="{x:Type Image}">
@@ -31,21 +28,18 @@
             <Style TargetType="{x:Type Button}">
                 <Setter Property = "HorizontalAlignment" Value = "Left"/>
                 <Setter Property = "VerticalAlignment" Value = "Top"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="Background" Value="#FF1C1C1C"/>
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
 
             </Style>
             <Style TargetType="{x:Type TextBox}">
                 <Setter Property = "HorizontalAlignment" Value = "Left"/>
                 <Setter Property = "VerticalAlignment" Value = "Top"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="Background" Value="#FF1C1C1C"/>
                 <Setter Property = "BorderBrush" Value = "#FF1C1C1C"/>
             </Style>
             <Style TargetType="{x:Type ListBoxItem}">
                 <Setter Property="Margin" Value="2"/>
                 <Setter Property="BorderBrush" Value="Gray"/>
+                <Setter Property="Focusable" Value="False"/>
             </Style>
             <Style TargetType="{x:Type TextBlock}">
                 <Setter Property="TextWrapping" Value="Wrap"/>
