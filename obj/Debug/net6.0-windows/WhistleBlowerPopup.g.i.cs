@@ -101,7 +101,7 @@ namespace Budweg {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Budweg;component/whistleblowerpopup.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Budweg;V1.0.0.0;component/whistleblowerpopup.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WhistleBlowerPopup.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -53,7 +53,7 @@ namespace Budweg {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Budweg;component/whistleblowerpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Budweg;V1.0.0.0;component/whistleblowerpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WhistleblowerPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

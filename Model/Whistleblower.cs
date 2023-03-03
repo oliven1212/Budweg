@@ -3,50 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
-namespace Budweg
+namespace Budweg.Model
 {
+    public enum ToDepartments   
+    {
+        HR,
+        CEO,
+        CFO,
+        ConfidenceRep,
+        WorkEnvironmentRep
+    }
     public class Whistleblower : Blog
     {
-        public enum WhistleblowerType
-        {
-            Complaints,
-            Improvements,
-            ProductionMistakes,
-            Other
-        }
+        public int WhistleblowerId { get; set; }
+        public string Password { get; set; }
+        public bool IsActive { get; set; }
+        public ToDepartments ToDepartment;
 
-        public string Password;
-        public bool IsActive;
-        public WhistleblowerType WhistleblowerTypeChoice;
 
-        public Whistleblower()
-        {
-
-        }
-        public Whistleblower(string title, string text, string picturePath) // WhistleblowerType whistleblowerTypeChoice 
-        {
-            Title= title;
-            Text= text;
-            PicturePath= picturePath;
-            IsActive= true;
-            // WhistleblowerTypeChoice = whistleblowerTypeChoice;
-        }
-
-        public Whistleblower CreateWhistleblower()
-        {
-            return null;
-        }
-
-        public Whistleblower ViewWhisteblower()
-        {
-            return null;
-        }
-
-        public Whistleblower whistleblower()
-        {
-            return null;
-        }
-
+        public Whistleblower() { }
     }
 }

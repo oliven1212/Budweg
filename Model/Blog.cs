@@ -12,7 +12,7 @@ namespace Budweg
         public Employee Author; 
         public string Title;
         public string Text;
-        public string PicturePath;
+        public string PictureName;
 
     }
 }

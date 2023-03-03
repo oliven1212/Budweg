@@ -16,10 +16,10 @@ namespace Budweg
         // WHISTLEBLOWER
 
         public ICommand CreateWhistleblowerCommand { get; } = new CreateWhistleblowerCommand();
-
         public ObservableCollection<Whistleblower> Whistleblowers { get; set; } = new ObservableCollection<Whistleblower>();
-
         public event PropertyChangedEventHandler? PropertyChanged;
+
+
 
         public string Title { get; set; }
         public string Text { get; set; }

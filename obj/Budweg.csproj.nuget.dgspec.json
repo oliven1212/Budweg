@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj": {}
+    "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj": {
+    "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj",
+        "projectUniqueName": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj",
         "projectName": "Budweg",
-        "projectPath": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\Budweg.csproj",
-        "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlad\\Documents\\GitHub\\Budweg\\obj\\",
+        "projectPath": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\Budweg.csproj",
+        "packagesPath": "C:\\Users\\askhy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\askhy\\source\\repos\\SkoleOpgaver\\Budweg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\askhy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
